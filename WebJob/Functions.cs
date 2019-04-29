@@ -15,6 +15,7 @@ namespace WebJob
         public static void ProcessQueueMessage([QueueTrigger("queue")] string message, TextWriter log)
         {
             log.WriteLine(message);
+            log.WriteLine(message);
         }
     }
 }
